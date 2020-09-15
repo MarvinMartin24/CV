@@ -2,7 +2,7 @@
 \ProvidesClass{resume}[Resume]
 
 % font size and paper type
-\LoadClass[10pt, a4paper]{article}
+\LoadClass[9pt, a4paper]{article}
 
 % remove paragraph indentation
 \usepackage[parfill]{parskip}
@@ -43,7 +43,7 @@
 \let \@addressthree \relax
 
 % set default address separator to a diamond
-\def \addressSep {$\diamond$}
+\def \addressSep {$|$}
 
 % \address command can be used to set the first, second, and third address (last 2 optional)
 \def \address #1{
@@ -75,7 +75,7 @@
 %----------------------------------------------------------------------------------------
 
 \newcommand{\link}[2]{
-  \textcolor{brown}{\href{#1}{#2}}
+  \textcolor{violet}{\underline{\href{#1}{#2}}}
 }
 
 %----------------------------------------------------------------------------------------
@@ -180,12 +180,12 @@
 %----------------------------------------------------------------------------------------
 
 % Size of the name at the top of the document
-\def \namesize {\huge}
+\def \namesize {\Large}
 % The space between the two address (or phone/email) lines
 \def \addressskip {\smallskip}
 % The space above the horizontal line for each section
 \def \sectionlineskip {\medskip}
 % The space after your name at the top
-\def \nameskip {\bigskip}
+\def \nameskip {\medskip}
 % The space after the heading section
-\def \sectionskip {\bigskip}
+\def \sectionskip {\medskip}
