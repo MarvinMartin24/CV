@@ -1,0 +1,233 @@
+% use the custom resume.cls style
+\documentclass{resume}
+
+% document margins
+\usepackage[left=0.4in,top=0.4in,right=0.4in,bottom=0.4in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{multicol}
+\setlength\columnsep{15pt}
+
+
+% commands
+\newcommand{\tab}[1]{\hspace{.1667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Marvin Martin}
+\address{\textbf{Software Engineer, Machine Learning}}
+\address{
+	New York, NY 10011 \\
+	\href{mailto:marvtin@bu.edu}{ marvtin@bu.edu } \\
+	+1 (917) 815-9864
+}
+
+
+\begin{document}
+
+	\begin{multicols}{2}
+
+	%----------------------------------------------------------------------------------------
+	%	EDUCATION SECTION
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Education}
+		\begin{school}{Boston University}{Boston, MA}{M.Sc. in Computer Information Systems}{01/2021}{09/2021}{
+			\begin{description}
+				\item[$\bullet$]Major:  Data Analytics, Grade A
+				\item[$\bullet$]{Relevant Coursework: \\
+				Analysis of Algorithms, Big Data Analytics, \\
+				Advanced Programming Techniques,  \\
+				Machine Learning, and Deep Learning.}
+			\end{description}
+		}
+		\end{school}
+		
+		\begin{school}{Ecole Centrale d'Electronique}{Paris, FR}{M.Sc. in Computer Information Systems}{09/2018}{12/2020}{
+			\begin{description}
+				\item[$\bullet$]Major: Data Science, Grade A  (Top 5\%)
+				\item[$\bullet$]{Relevant Coursework: \\
+				Advanced Database, DevOps, Web Development,\\
+				Cloud computing, and Mathematics for Data Science.}
+			\end{description}
+		}
+		\end{school}
+		\begin{school}{INSEEC London}{London, UK}{B.Sc. in Computer Science}{01/2019}{05/2019}{
+			\begin{description}
+				\item[$\bullet$]{Relevant Coursework: \\
+				Java, Probability and Statistics, and Public Speaking.}
+			\end{description}
+		}
+		\end{school}
+		\begin{school}{Heriot-Watt University}{Edinburgh, UK}{B.Sc. in Computer Science}{01/2018}{06/2018}{
+			\begin{description}
+				\item[$\bullet$]{Relevant Coursework: \\
+				Electronics, C Language, and Business Management.}
+			\end{description}
+		}
+		\end{school}
+		\begin{school}{Institut Supérieur d'Electronique}{Paris, FR}{Associate of Science}{09/2016}{12/2018}{
+			\begin{description}
+				\item[$\bullet$]{Relevant Coursework: \\
+				Calculus I and II, Linear Algebra, Analysis I and II, \\
+				Mechanics Physics and Signal Processing.}
+			\end{description}
+		}
+		\end{school}
+	\end{rSection}
+
+	%----------------------------------------------------------------------------------------
+	%	WORK EXPERIENCE SECTION
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Experience}
+
+		%----------------------------------------------------
+		%	Centre Securité Requin
+		%----------------------------------------------------
+		\begin{job}{Centre Securité Requin (CSR)}{Réunion, FR}{Machine Learning Engineer Consultant}{11/2020}{Now}{
+			\link{http://www.info-requin.re/le-centre-securite-requin-r70.html}{CSR}is a public research center that studies shark attacks.
+			\begin{description}
+				\item[$\bullet$] Build Neural Network for underwater shark classification.
+				\item[$\bullet$] Research related to Adversarial Domain Adaptation.
+				\item[$\bullet$] Create pipelines using Nifi to classify videos in real time.
+				\item[$\bullet$] Investigate model reliability based on weather conditions.
+			\end{description}
+		}
+		\end{job}
+
+		%----------------------------------------------------
+		%	HEURITECH
+		%----------------------------------------------------
+		\begin{job}{Heuritech}{Paris, FR}{Training Data Operator Intern}{04/2020}{08/2020}{
+			\link{https://www.heuritech.com/}{Heuritech}builds visual recognition and trend forecasting \\ technologies for fashion industry.
+			\begin{description}
+				\item[$\bullet$] Developed Python internal automation tools.
+				\item[$\bullet$] Ran data engineering tasks to improve datasets. 
+				\item[$\bullet$] Trained Deep ConvNets from containers.
+				\item[$\bullet$] Active Learning research on acquisition functions.
+				\item[$\bullet$] Training metrics investigation.
+				\item[$\bullet$] Prioritized strategies for error and bias reduction.
+			\end{description}
+		}
+		\end{job}
+		%----------------------------------------------------
+		%	LECTRA
+		%----------------------------------------------------
+		\begin{job}{Lectra, Innovation Lab}{Bordeaux , FR}{Lab Intern}{05/2019}{06/2019}{
+			\link{https://www.lectra.com/fr}{Lectra}develops systems for the textile industry.
+			\begin{description}
+				\item[$\bullet$] Explored Generative Adversarial Network for fashion.
+				\item[$\bullet$] Collected web data using Data Crawling techniques.
+			\end{description}
+		}
+		\end{job}
+	\end{rSection}
+	
+	\columnbreak
+	
+	%----------------------------------------------------------------------------------------
+	%	Links
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Links}
+			\link{https://marvinmartin24.github.io/}{Website}
+			\link{https://www.linkedin.com/in/marvin-martin-00b937120/}{LinkedIn}
+			\link{https://github.com/MarvinMartin24}{Github}
+			\link{https://medium.com/@martin.marvin}{Medium}
+	\end{rSection}
+	
+	%----------------------------------------------------------------------------------------
+	%	Publications
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Publications}
+		\textbf{In progress}:  A framework for shark detection employing underwater cameras and domain adversarial convolutional neural network (Boston University and CSR). 
+	\end{rSection}
+
+	%----------------------------------------------------------------------------------------
+	%	Projects
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Projects}
+	
+		%----------------------------------------------------------------------------------------
+		%	Projects #1
+		%----------------------------------------------------------------------------------------
+		\begin{project}{Domain adversarial neural network}{\link{https://github.com/MarvinMartin24/MADA-PL/blob/main/Report/Domain-Adversarial-Training-Report.pdf}{[Report]}}{\link{https://github.com/MarvinMartin24/MADA-PL}{[Code]}}{
+			Reproducibility study of the papers: Ganin Y., et al. \\Domain-adversarial training of neural networks, and Pei Z.,\\ et al. Multi-adversarial domain adaptation.
+			I increased by \\0.025 the target accuracy, of the MNIST$\rightarrow$MNISTM task.
+		}
+		\end{project}
+	
+		%----------------------------------------------------------------------------------------
+		%	Projects #2
+		%----------------------------------------------------------------------------------------
+		\begin{project}{PySpark neural network from scratch}{\link{https://towardsdatascience.com/pyspark-neural-network-from-scratch-8a19ebad3904}{[Article]}}{\link{https://github.com/MarvinMartin24/PySpark-Neural-Network}{[Code]}}{
+		 	Spark implementation of a shallow neural network to classify \\handwritten digits. The training can run in the Cloud with \\large dataset. Gradients are computed via MapReduce jobs.
+		}
+		\end{project}
+		
+		%----------------------------------------------------------------------------------------
+		%	Projects #3
+		%----------------------------------------------------------------------------------------
+		\begin{project}{Emotion based Art Generator}{\link{https://medium.com/@martin.marvin/emotion-based-art-generation-using-c-gan-de9abed6fa2f}{[Article]}}{\link{https://github.com/MarvinMartin24/CGAN-Emotion-Art}{[Code]}}{
+		Conditional generative adversarial neural network (CGAN) \\trained to generate 64 $\times$ 64 painting images for a selected \\style (portrait, abstract, landscape or flower-painting) and \\emotion (positive, neutral, or negative).
+		}
+		\end{project}
+		
+		
+		%----------------------------------------------------------------------------------------
+		%	Projects #4
+		%----------------------------------------------------------------------------------------
+		\begin{project}{LogNice}{\link{https://github.com/LogNice/lognice}{[Code]}}{}{
+			 Python distributed code executor for an online coding \\competition platform. Code submissions are queued with \\RabbitMQ and Celery, then ran in a docker container. \\Scores are stored using a Redis database and sent to the user\\ using SocketIO.
+		}
+		\end{project}
+		
+		
+	\end{rSection}
+	
+	
+	%----------------------------------------------------------------------------------------
+	%	Certificate
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Certifications}
+		\begin{description}
+			\setlength\itemsep{-0.5em}
+			\item[$\bullet$] \link{https://app.workera.ai/public/candidate/certificate?code=AUNDCFBV}{Workera Software Engineer Deep Learning Assessment}
+			\item[$\bullet$] \link{https://www.coursera.org/account/accomplishments/specialization/certificate/925K8YUCXEW2}{Deep Learning Specialization} by DeepLearning.AI.
+			\item[$\bullet$] \link{https://www.coursera.org/account/accomplishments/specialization/certificate/MRPQR8RYY89R}{GANs Specialization} by DeepLearning.AI.
+			\item[$\bullet$] \link{https://www.udemy.com/certificate/UC-828742bf-b681-48ca-8715-8879de561696/?persist_locale=&locale=en_US}{Deep Learning and Computer Vision A-Z}.
+			
+
+		\end{description}
+	\end{rSection}
+
+	%----------------------------------------------------------------------------------------
+	%	SKILLS
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Skills}
+		\begin{description}
+			\setlength\itemsep{-0.5em}
+			\item[$\bullet$ Languages]: Python, Java, R, C, JavaScript, NodeJs.
+			\item[$\bullet$ Libraries]: Tensorflow2, Pytorch, Skit-Learn, Wandb, Spark, OpenCV, Pandas, Numpy, ReactJs.
+			\item[$\bullet$ Tools]: Git, Docker, Google Cloud, AWS, Hadoop.
+			\item[$\bullet$ Databases]: MongoDB, MySQL, FireBase, HDFS.
+			\item[$\bullet$ Teamwork]: Zoom, Notion, Slack, Slite.
+			\item[$\bullet$ Soft Skills]: Ethics, Leadership, Public Speaking.
+		\end{description}
+	\end{rSection}
+
+	%----------------------------------------------------------------------------------------
+	%	LANGUAGES
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large Languages}
+		\textbf{English}:  Fluent \hspace{1ex} \textbf{French}: Native \hspace{1ex} \textbf{Spanish}:  Novice
+	\end{rSection}
+
+	%----------------------------------------------------------------------------------------
+	%	EXTRA
+	%----------------------------------------------------------------------------------------
+	\begin{rSection}{\Large ACTIVITIES \& LEADERSHIP}
+		\textbf{Comedian, Stuntman}: Performed in \link{https://www.youtube.com/channel/UCorBR38MbWKo92Go3dBpv2Q}{Timéo} in front of 1000 people, 3 times a week as a skateboarder (2016).\\
+		\textbf{Sports}: Skateboard (Instructor), Surf, and Slackline.\\
+		\textbf{Achievements}: 300km in 3 days on a longboard.
+	\end{rSection}
+	
+	\end{multicols}
+\end{document}
