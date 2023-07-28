@@ -120,12 +120,12 @@
   % list for each individual item in the section
   \begin{list}{}{
     % margin within the section
-    \setlength{\leftmargin}{1em}
+    \setlength{\leftmargin}{0.1em}
   }
   \item[]
 }{
   \end{list}
-  \vspace{0.3em}
+  \vspace{0.1em}
 }
 
 %----------------------------------------------------------------------------------------

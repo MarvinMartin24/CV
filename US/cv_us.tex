@@ -6,6 +6,8 @@
 \usepackage{hyperref}
 \usepackage{xcolor}
 \usepackage{multicol}
+\usepackage{tabularx} % Include this package in your preamble
+
 \setlength\columnsep{15pt}
 
 
@@ -14,10 +16,10 @@
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 \name{Marvin Martin}
-\address{\textbf{SE ML / Machine Learning Engineer}}
+\address{\textbf{Machine Learning Engineer}}
 \address{
-	New York, NY 10011 \\
-	\href{mailto:marvtin@bu.edu}{ marvtin@bu.edu } \\
+	Brooklyn, NY 11249 \\
+	\href{mailto:mmartin.mmarvin@gmail.com}{mmartin.mmarvin@gmail.com} \\
 	+1 (917) 815-9864
 }
 
@@ -32,7 +34,7 @@
 	\begin{rSection}{\Large Education}
 		\begin{school}{Boston University}{Boston, MA}{M.Sc. in Computer Information Systems}{01/2021}{09/2021}{
 			\begin{description}
-				\item[$\bullet$]Major:  Data Analytics, Grade A (4/4)
+				\item[$\bullet$]Major:  Data Analytics, GPA 4.0
 				\item[$\bullet$]{Relevant Coursework: \\
 				Analysis of Algorithms, Big Data Analytics, \\
 				Advanced Programming Techniques,  \\
@@ -75,12 +77,14 @@
 		%----------------------------------------------------
 		%	Vic.ai
 		%----------------------------------------------------
-		\begin{job}{Vic.ai}{New-York, NY, USA}{Machine Learning Engineer}{11/2021}{Now}{
+		\begin{job}{Vic.ai}{New-York, NY, USA}{Machine Learning Engineer}{11/2021}{Present}{
 			\link{https://www.vic.ai/}{Vic.ai}builds AI-based autonomous accounting systems.
 			\begin{description}
-				\item[$\bullet$] SOTA NLP model development.
-				\item[$\bullet$] MLOps - Build CI/CD/CT training pipelines.
-				\item[$\bullet$] Support 20,000 models training daily on AWS (+800\%).
+				\item[$\bullet$] Modeling Gradient Boosting, Transformers and LLMs.
+				\item[$\bullet$] Build Projects like PO Matching, Invoice Coding, OCR.
+				\item[$\bullet$] ML Infrastructure (Lambda, SageMarker, Kubernetes).
+				\item[$\bullet$] Data Engineering, Feature Engineering at scale (Ray).
+				\item[$\bullet$] Support +20,000 models training bi-weekly (+800\%).
 			\end{description}
 		}
 		\end{job}
@@ -88,7 +92,7 @@
 		%----------------------------------------------------
 		%	Centre Securité Requin
 		%----------------------------------------------------
-		\begin{job}{Centre Securité Requin (CSR)}{Réunion, FR}{Machine Learning Engineer Consultant}{11/2020}{Now}{
+		\begin{job}{Centre Securité Requin (CSR)}{Réunion, FR}{Machine Learning Engineer Consultant}{11/2020}{Present}{
 			\link{http://www.info-requin.re/le-centre-securite-requin-r70.html}{CSR}is a public research center that studies shark attacks.
 			\begin{description}
 				\item[$\bullet$] Build Neural Network for underwater shark classification.
@@ -105,12 +109,10 @@
 		\begin{job}{Heuritech}{Paris, FR}{Training Data Operator Intern}{04/2020}{08/2020}{
 			\link{https://www.heuritech.com/}{Heuritech}builds visual recognition and trend forecasting \\ technologies for fashion industry.
 			\begin{description}
-				\item[$\bullet$] Developed Python internal automation tools.
 				\item[$\bullet$] Ran data engineering tasks to improve datasets. 
-				\item[$\bullet$] Trained Deep ConvNets from containers.
+				\item[$\bullet$] Trained Deep ConvNets.
 				\item[$\bullet$] Active Learning research on acquisition functions.
 				\item[$\bullet$] Training metrics investigation.
-				\item[$\bullet$] Prioritized strategies for error and bias reduction.
 			\end{description}
 		}
 		\end{job}
@@ -121,7 +123,6 @@
 			\link{https://www.lectra.com/fr}{Lectra}develops systems for the textile industry.
 			\begin{description}
 				\item[$\bullet$] Explored Generative Adversarial Network for fashion.
-				\item[$\bullet$] Collected web data using Data Crawling techniques.
 			\end{description}
 		}
 		\end{job}
@@ -133,10 +134,10 @@
 	%	Links
 	%----------------------------------------------------------------------------------------
 	\begin{rSection}{\Large Links}
-			\link{https://marvinmartin24.github.io/}{Website}
 			\link{https://www.linkedin.com/in/marvin-martin-00b937120/}{LinkedIn}
 			\link{https://github.com/MarvinMartin24}{Github}
 			\link{https://medium.com/@martin.marvin}{Medium}
+			\link{https://marvinmartin24.github.io/}{Website}
 	\end{rSection}
 	
 	%----------------------------------------------------------------------------------------
@@ -155,8 +156,7 @@
 		%	Projects #1
 		%----------------------------------------------------------------------------------------
 		\begin{project}{Domain adversarial neural network}{\link{https://github.com/MarvinMartin24/MADA-PL/blob/main/Report/Domain-Adversarial-Training-Report.pdf}{[Report]}}{\link{https://github.com/MarvinMartin24/MADA-PL}{[Code]}}{
-			Reproducibility study of the papers: Ganin Y., et al. \\Domain-adversarial training of neural networks, and Pei Z.,\\ et al. Multi-adversarial domain adaptation.
-			I increased by \\0.025 the target accuracy, of the MNIST$\rightarrow$MNISTM task.
+			Reproducibility study of the \link{https://jmlr.org/papers/volume17/15-239/15-239.pdf}{DANN} and \link{https://arxiv.org/pdf/1809.02176.pdf}{MADA} papers \\using PyTorch-Lightning.
 		}
 		\end{project}
 	
@@ -164,7 +164,7 @@
 		%	Projects #2
 		%----------------------------------------------------------------------------------------
 		\begin{project}{PySpark neural network from scratch}{\link{https://towardsdatascience.com/pyspark-neural-network-from-scratch-8a19ebad3904}{[Article]}}{\link{https://github.com/MarvinMartin24/PySpark-Neural-Network}{[Code]}}{
-		 	Spark implementation of a shallow neural network to classify \\handwritten digits. The training can run in the Cloud with \\large dataset. Gradients are computed via MapReduce jobs.
+		 	Spark implementation of a shallow neural network to classify \\handwritten digits. Gradients are computed via MapReduce.
 		}
 		\end{project}
 		
@@ -172,20 +172,16 @@
 		%	Projects #3
 		%----------------------------------------------------------------------------------------
 		\begin{project}{Emotion based Art Generator}{\link{https://medium.com/@martin.marvin/emotion-based-art-generation-using-c-gan-de9abed6fa2f}{[Article]}}{\link{https://github.com/MarvinMartin24/CGAN-Emotion-Art}{[Code]}}{
-		Conditional generative adversarial neural network (CGAN) \\trained to generate 64 $\times$ 64 painting images for a selected \\style (portrait, abstract, landscape or flower-painting) and \\emotion (positive, neutral, or negative).
+		Conditional generative adversarial neural network (CGAN) \\trained to generate 64 $\times$ 64 painting images for a selected \\style and emotion.
 		}
 		\end{project}
-		
-		
 		%----------------------------------------------------------------------------------------
 		%	Projects #4
 		%----------------------------------------------------------------------------------------
-		\begin{project}{LogNice}{\link{https://github.com/LogNice/lognice}{[Code]}}{}{
-			 Python distributed code executor for an online coding \\competition platform. Code submissions are queued with \\RabbitMQ and Celery, then ran in a docker container. \\Scores are stored using a Redis database and sent to the user\\ using SocketIO.
+		\begin{project}{Neural Network from Scratch}{\link{https://medium.com/@martin.marvin/emotion-based-art-generation-using-c-gan-de9abed6fa2f}{[Article]}}{\link{https://github.com/MarvinMartin24/CGAN-Emotion-Art}{[Code]}}{
+		Mathematics and Numpy code behind 3 Layers Neural \\Network.
 		}
 		\end{project}
-		
-		
 	\end{rSection}
 	
 	
@@ -195,12 +191,11 @@
 	\begin{rSection}{\Large Certifications}
 		\begin{description}
 			\setlength\itemsep{-0.5em}
+			\item[$\bullet$] \link{https://www.coursera.org/account/accomplishments/certificate/AD5Z7KGC3QJY}{Generative AI with Large Language Models}
+			\item[$\bullet$] \link{https://www.cloudskillsboost.google/public_profiles/01a17435-5a17-40f0-88e0-972d77b2fda5/badges/3950403}{Generative AI Fundamentals}
 			\item[$\bullet$] \link{https://app.workera.ai/public/candidate/certificate?code=AUNDCFBV}{Workera Software Engineer Deep Learning Assessment}
-			\item[$\bullet$] \link{https://www.coursera.org/account/accomplishments/specialization/certificate/925K8YUCXEW2}{Deep Learning Specialization} by DeepLearning.AI.
-			\item[$\bullet$] \link{https://www.coursera.org/account/accomplishments/specialization/certificate/MRPQR8RYY89R}{GANs Specialization} by DeepLearning.AI.
-			\item[$\bullet$] \link{https://www.udemy.com/certificate/UC-828742bf-b681-48ca-8715-8879de561696/?persist_locale=&locale=en_US}{Deep Learning and Computer Vision A-Z}.
-			
-
+			\item[$\bullet$] \link{https://www.coursera.org/account/accomplishments/specialization/certificate/925K8YUCXEW2}{Deep Learning Specialization} 
+			\item[$\bullet$] \link{https://www.coursera.org/account/accomplishments/specialization/certificate/MRPQR8RYY89R}{GANs Specialization}	
 		\end{description}
 	\end{rSection}
 
@@ -208,14 +203,16 @@
 	%	SKILLS
 	%----------------------------------------------------------------------------------------
 	\begin{rSection}{\Large Skills}
-		\begin{description}
-			\setlength\itemsep{-0.5em}
-			\item[$\bullet$ Languages]: Python, Java, Bash, R, C, JavaScript.
-			\item[$\bullet$ Libraries]: Tensorflow, Pytorch-Lightning, Skit-Learn, Wandb, OpenCV, Pandas, Numpy.
-			\item[$\bullet$ Tools]: Git, Circle-ci, Docker, Sentry, Datadog.
-			\item[$\bullet$ Cloud]:  GCP, AWS (S3, Lamda, Batch, Step Functions, EFS), Ray, Hadoop, Spark.
-			\item[$\bullet$ Databases]: MongoDB, PostgreSQL, FireBase, HDFS.
-		\end{description}
+		\noindent
+		 \setlength{\tabcolsep}{2pt}
+    \begin{tabularx}{0.49\textwidth}{@{\textbullet\hspace{\labelsep}}lX}
+        \textbf{Languages} & Python, Java, Bash, R, C, JavaScript. \\
+        \textbf{ML Libraries} & PyTorch, Keras, HuggingFace, PEFT, LangChain, OpenAI, Skit-Learn, Wandb, DVC, OpenCV, Pinecone, MLlib. \\
+        \textbf{Monitoring} & Sentry, Datadog, Grafana, Zabbix. \\
+        \textbf{Deployment} & Docker, Terraform, Kubernetes, AWS, Git-flow, Circle-ci. \\
+        \textbf{Cloud} & AWS (SageMaker, S3, Lambda, Batch, ECS, EFS, SAM), GCP, Ray. \\
+        \textbf{Databases} & PostgreSQL, Redis, MongoDB, Firebase. \\
+    \end{tabularx}
 	\end{rSection}
 
 	%----------------------------------------------------------------------------------------
