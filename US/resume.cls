@@ -28,7 +28,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\namesize \bf \@name \hspace{0.5mm} \normalsize (He/Him/His)}\hfil
+    \hfil{\namesize \bf \@name \hspace{0.5mm} \normalsize (He/Him)}\hfil
     \nameskip\break
   \endgroup
 }
